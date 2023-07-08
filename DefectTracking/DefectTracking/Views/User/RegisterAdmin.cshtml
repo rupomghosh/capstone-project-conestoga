@@ -1,0 +1,40 @@
+﻿@model RegisterViewModel
+@{
+    ViewBag.Title = "Register Admin";
+}
+
+<h1 class="text-white">Register Admin</h1>
+<p></p>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form method="post" asp-controller="User" asp-action="RegisterAdmin">
+    <div class="form-group row">
+        <div class="col-sm-2 text-white"><label>Username:</label></div>
+        <div class="col-sm-4">
+            <input asp-for="Username" class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="Username"
+                  class="text-danger"></span>
+        </div>
+    </div>
+    <p></p>
+    <div class="form-group row">
+        <div class="col-sm-2 text-white"><label>Password:</label></div>
+        <div class="col-sm-4">
+            <input type="password" asp-for="Password"
+                   class="form-control" />
+        </div>
+        <div class="col">
+            <span asp-validation-for="Password"
+                  class="text-danger"></span>
+        </div>
+    </div>
+    <p></p>
+    <div class="row">
+        <div class="offset-2 col-sm-4">
+            <button type="submit" class="btn btn-primary">
+                Register Admin
+            </button>
+        </div>
+    </div>
+</form>

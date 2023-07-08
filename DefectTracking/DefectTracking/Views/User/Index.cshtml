@@ -1,0 +1,83 @@
+﻿@using DefectTracking.Models
+@model UserViewModel
+@{
+    ViewData["Title"] = " | Manage Users";
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DefectTracking.styles.css" asp-append-version="true" />
+}
+
+<h1 class="mb-2 text-white">Manage Users</h1>
+<table class="table table-bordered table-striped table-sm">
+    <thead>
+        <tr>
+            <th>
+                <div class="text-white">Users</div>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Users.Count() == 0)
+        {
+            <tr><td colspan="5" class="text-white">There are no user accounts.</td></tr>
+        }
+        else
+        {
+            @foreach (User user in Model.Users)
+            {
+                <tr>
+                    <td class="text-white">@user.UserName</td>
+                    <td>
+                        @if (!user.UserName.Contains("AdminIVD"))
+                        {
+                            <form method="post" asp-action="Delete"
+                      asp-route-id="@user.Id">
+                                <button type="submit" class="btn btn-primary">
+                                    Delete User
+                                </button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@*
+<h1 class="mb-2 text-white">Manage Roles</h1>
+@if (Model.Roles.Count() == 0)
+{
+    <form method="post" asp-action="CreateAdminRole">
+        <button type="submit" class="btn btn-primary">
+            Create Admin Role
+        </button>
+    </form>
+}
+else
+{
+    <table class="table table-bordered table-striped table-sm">
+        <thead>
+            <tr><th class="text-white">Role</th><th></th></tr>
+        </thead>
+        <tbody>
+            @foreach (var role in Model.Roles)
+            {
+                <tr>
+                    <td class="text-white">@role.Name</td>
+                    <td>
+                        <form method="post" asp-action="DeleteRole"
+                      asp-route-id="@role.Id">
+                            <button type="submit"
+                            class="btn btn-primary">
+                                Delete Role
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    *@
+}

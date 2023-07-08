@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DefectTracking
+build_property.RootNamespace = DefectTracking
+build_property.ProjectDir = C:\GitHub\9CI_QMS_DATABASE\2) Construction\DefectTracking\DefectTracking\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\GitHub\9CI_QMS_DATABASE\2) Construction\DefectTracking\DefectTracking
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Account/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/DeliveryForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcRGVsaXZlcnlGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/DeliveryIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcRGVsaXZlcnlJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/ManufacturingForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcTWFudWZhY3R1cmluZ0Zvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/ManufacturingIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcTWFudWZhY3R1cmluZ0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/SearchDeliveryIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcU2VhcmNoRGVsaXZlcnlJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/SearchManufacturingIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcU2VhcmNoTWFudWZhY3R1cmluZ0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/SearchWarrantyIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcU2VhcmNoV2FycmFudHlJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/WarrantyForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcV2FycmFudHlGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Forms/WarrantyIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcV2FycmFudHlJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Home/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Report/DeliveryReportSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XERlbGl2ZXJ5UmVwb3J0U3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Report/ManufacturingReportSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XE1hbnVmYWN0dXJpbmdSZXBvcnRTdW1tYXJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Report/WarrantyReportSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XFdhcnJhbnR5UmVwb3J0U3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/User/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/User/RegisterEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RlckVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/User/RegisterSupplier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RlclN1cHBsaWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/9CI_QMS_DATABASE/2) Construction/DefectTracking/DefectTracking/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-49i95ps6l1

@@ -1,0 +1,99 @@
+﻿@model IEnumerable<DefectTracking.Models.DeliveryDefects>
+
+@{
+	ViewData["Title"] = "DeliveryIndex";
+}
+
+
+<h1 class="text-white">Delivery Index</h1>
+
+<form method="get" asp-controller="Forms" asp-action="SearchDeliveryIndex">
+	<div style="display:flex; flex-direction: row;">
+		<div class="col-sm-2 text-white"><label>Search Serial Number</label></div>
+		<div class="col-sm-4 text-white"><label>Second Serial Number (For Range)</label></div>
+	</div>
+	<div class="col-sm-4">
+		<input type="number" name="FirstSerialNumber" />
+		<input type="number" name="SecondSerialNumber" />
+		<input type="submit" value="Search" />
+		<input type="button" value="Clear" onclick="location.href='@Url.Action("DeliveryIndex", "Forms")'" />
+	</div>
+</form>
+<h2>
+	<a asp-action="WarrantyForm">Create New Form</a>
+</h2>
+<table class="table text-white text-center">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.SerialNumber)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.UnitType)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Display)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.CalibrationMissingCalibration)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.MechanicalAssemblyError)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.DeadorDyingBatteries)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.PCBBoardDefect)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Other)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.OtherDesc)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.ProblemDesc)
+			</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.SerialNumber)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.UnitType)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Display)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.CalibrationMissingCalibration)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.MechanicalAssemblyError)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.DeadorDyingBatteries)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.PCBBoardDefect)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Other)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.OtherDesc)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.ProblemDesc)
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+@ViewBag.Exception

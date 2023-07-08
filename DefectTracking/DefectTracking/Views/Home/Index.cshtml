@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DefectTracking.styles.css" asp-append-version="true" />
+}
+
+<div class="text-center">
+    <img src="~/image/maxresdefault.jpg" height="250" width="400"/>
+</div>
+
+<table class=" table table-bordered table-striped table-sm">
+    <thead>
+        <tr>
+            <th class="text-md-center">
+                <h1 class="text-white">Forms</h1>
+            </th>
+            <th class="text-md-center">
+                <h1 class="text-white">Records</h1>
+            </th>
+            <th class="text-md-center">
+                <h1 class="text-white">Reports</h1>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Forms" asp-action="ManufacturingForm"><h1>Manufacturing Defect</h1></a>
+                <p></p>
+            </th>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Forms" asp-action="ManufacturingIndex"><h1>Manufacturing Defect</h1></a>
+                <p></p>
+            </th>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Report" asp-action="ManufacturingReportSummary"><h1>Manufacturing Defect</h1></a>
+                <p></p>
+            </th>
+        </tr>
+        <tr>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Forms" asp-action="DeliveryForm"><h1>Delivery Defect</h1></a>
+                <p></p>
+            </th>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Forms" asp-action="DeliveryIndex"><h1>Delivery Defect</h1></a>
+                <p></p>
+            </th>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Report" asp-action="DeliveryReportSummary"><h1>Delivery Defect</h1></a>
+                <p></p>
+            </th>
+        </tr>
+        <tr>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Forms" asp-action="WarrantyForm"><h1>Warranty Defect</h1></a>
+                <p></p>
+            </th>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Forms" asp-action="WarrantyIndex"><h1>Warranty Defect</h1></a>
+                <p></p>
+            </th>
+            <th class="text-md-center">
+                <p></p>
+                <a class="btn btn-outline-white text-white" asp-area="" asp-controller="Report" asp-action="WarrantyReportSummary"><h1>Warranty Defect</h1></a>
+                <p></p>
+            </th>
+        </tr>
+
+    </tbody>
+</table>

@@ -1,0 +1,204 @@
+﻿@model IEnumerable<DefectTracking.Models.WarrantyDefects>
+
+@{
+	ViewData["Title"] = "WarrantyReportSummary";
+}
+
+<h1 class="text-white">Warranty Report Summary</h1>
+
+<h4>
+	<input type="button" value="Save Print" onclick="window.print()" />
+</h4>
+<table class="table text-white text-center">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.UnitType)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Display)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.CalibrationMissingCalibration)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.MechanicalAssemblyError)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.DeadorDyingBatteries)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.PCBBoardDefect)
+			</th>
+
+			<th>
+				@Html.DisplayNameFor(model => model.Other)
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				Classic II
+			</td>
+			<td>
+				@ViewBag.DisplayCountC2
+			</td>
+			<td>
+				@ViewBag.CalCountC2
+			</td>
+			<td>
+				@ViewBag.MechCountC2
+			</td>
+			<td>
+				@ViewBag.DeadCountC2
+			</td>
+			<td>
+				@ViewBag.PCBCountC2
+			</td>
+			<td>
+				@ViewBag.OtherCountC2
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Micro
+			</td>
+			<td>
+				@ViewBag.DisplayCountM2
+			</td>
+			<td>
+				@ViewBag.CalCountM2
+			</td>
+			<td>
+				@ViewBag.MechCountM2
+			</td>
+			<td>
+				@ViewBag.DeadCountM2
+			</td>
+			<td>
+				@ViewBag.PCBCountM2
+			</td>
+			<td>
+				@ViewBag.OtherCountM2
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Pro II
+			</td>
+			<td>
+				@ViewBag.DisplayCountP2
+			</td>
+			<td>
+				@ViewBag.CalCountP2
+			</td>
+			<td>
+				@ViewBag.MechCountP2
+			</td>
+			<td>
+				@ViewBag.DeadCountP2
+			</td>
+			<td>
+				@ViewBag.PCBCountP2
+			</td>
+			<td>
+				@ViewBag.OtherCountP2
+			</td>
+		</tr>
+	</tbody>
+</table>
+@ViewBag.Exception
+<div id="chartContainer" class="chart-holder" style="height: 250px;"></div>
+<label class="text-white" style="font-size: 20px;">Total: @ViewBag.TotalC2</label>
+<div id="chartContainer2" class="chart-holder" style="margin-top: 30px; height: 250px;"></div>
+<label class="text-white" style="font-size: 20px;">Total: @ViewBag.TotalP2</label>
+<div id="chartContainer3" class="chart-holder" style="margin-top: 30px; height: 250px;"></div>
+<label class="text-white" style="font-size: 20px;">Total: @ViewBag.TotalM2</label>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript" style="align-content: flex-start;">
+	var chart2 = new CanvasJS.Chart("chartContainer2", {
+		title: {
+			text: "Pro II Defect Graph" 
+		},
+		animationEnabled: true,
+		theme: "bg-black",
+		data: [
+			{
+				type: "pie",
+				indexLabelFontFamily: "Garamond",
+				indexLabelFontSize: 20,
+				indexLabel: "{label} {y}",
+				startAngle: -20,
+				toolTipContent: "{legendText}: {y}",
+				dataPoints: [
+					
+					{ y: @ViewBag.OtherCountP2, legendText: "Pro II : Other", label: "Pro II : Other:" },
+					{ y: @ViewBag.DisplayCountP2, legendText: "Pro II : Display", label: "Pro II : Display:" },
+					{ y: @ViewBag.CalCountP2, legendText: "Pro II : Calibration/Missing Calibration", label: "Pro II : Calibration/Missing Calibration:" },
+					{ y: @ViewBag.MechCountP2, legendText: "Pro II : Mechanical Error", label: "Pro II : Mechanical Error:" },
+					{ y: @ViewBag.DeadCountP2, legendText: "Pro II : Dead or Dying Batteries", label: "Pro II : Dead or Dying Batteries:" },
+					{ y: @ViewBag.PCBCountP2, legendText: "Pro II : PCB", label: "Pro II : PCB:" }
+
+				]
+			}
+		]
+	});
+	var chart1 = new CanvasJS.Chart("chartContainer", {
+		title: {
+			text: "Classic II Defect Graph"
+		},
+		animationEnabled: true,
+		theme: "bg-black",
+		data: [
+			{
+				type: "pie",
+				indexLabelFontFamily: "Garamond",
+				indexLabelFontSize: 20,
+				indexLabel: "{label}: {y}",
+				startAngle: -20,
+				toolTipContent: "{legendText}: {y}",
+				dataPoints: [
+
+					{ y: @ViewBag.OtherCountC2, legendText: "Classic II : Other", label: "Classic II : Other" },
+					{ y: @ViewBag.DisplayCountC2, legendText: "Classic II : Display", label: "Classic II : Display" },
+					{ y: @ViewBag.CalCountC2, legendText: "Classic II : Calibration/Missing Calibration", label: "Classic II : Calibration/Missing Calibration" },
+					{ y: @ViewBag.MechCountC2, legendText: "Classic II : Mechanical Error", label: "Classic II : Mechanical Error" },
+					{ y: @ViewBag.DeadCountC2, legendText: "Classic II : Dead or Dying Batteries", label: "Classic II : Dead or Dying Batteries" },
+					{ y: @ViewBag.PCBCountC2, legendText: "Classic II : PCB", label: "Classic II : PCB" }
+
+				]
+			}
+		]
+	});
+	var chart3 = new CanvasJS.Chart("chartContainer3", {
+		title: {
+			text: "Micro Defect Graph"
+		},
+		animationEnabled: true,
+		theme: "bg-black",
+		data: [
+			{
+				type: "pie",
+				indexLabelFontFamily: "Garamond",
+				indexLabelFontSize: 20,
+				indexLabel: "{label}: {y}",
+				startAngle: -20,
+				toolTipContent: "{legendText}: {y}",
+				dataPoints: [
+
+					{ y: @ViewBag.OtherCountM2, legendText: "Micro : Other", label: "Micro : Other" },
+					{ y: @ViewBag.DisplayCountM2, legendText: "Micro : Display", label: "Micro : Display" },
+					{ y: @ViewBag.CalCountM2, legendText: "Micro : Calibration/Missing Calibration", label: "Micro : Calibration/Missing Calibration" },
+					{ y: @ViewBag.MechCountM2, legendText: "Micro : Mechanical Error", label: "Micro : Mechanical Error" },
+					{ y: @ViewBag.DeadCountM2, legendText: "Micro : Dead or Dying Batteries", label: "Micro : Dead or Dying Batteries" },
+					{ y: @ViewBag.PCBCountM2, legendText: "Micro : PCB", label: "Micro : PCB" }
+
+				]
+			}
+		]
+	});
+	chart1.render();
+	chart2.render();
+	chart3.render();
+</script>
