@@ -1,0 +1,40 @@
+﻿@model Test_Code_For_Website_2._0.Models.LoopClassViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post" asp-controller="Home" asp-action="Index">
+	
+	<div style="display:flex; flex-direction: column; justify-content: center; align-items: center">
+		<div class="col-sm-2"><label><h4> First Serial Number</h4></label></div>
+			<input type="number" asp-for="firstSerialNumber" />
+		<div class="text-center">
+			<span asp-validation-for="firstSerialNumber"
+				  class="text-danger"></span>
+		</div>
+	</div>
+	<div style="display:flex; flex-direction: column; justify-content: center; align-items: center">
+    <div class="col-sm-2"><label><h4>Last Serial Number</h4></label></div>
+        <input type="number" asp-for="lastSerialNumber"/>
+        <div class="text-center">
+            <span asp-validation-for="lastSerialNumber"
+              class="text-danger"></span>
+        </div>
+    </div>
+	<div style="display:flex; flex-direction: column; justify-content: center; align-items: center">
+		<div class="col-sm-2"><label><h4>Tech Name</h4></label></div>
+		<input type="text" asp-for="techName" />
+		<div class="text-center">
+			<span asp-validation-for="techName"
+                  class="text-danger"></span>
+		</div>
+	</div>
+
+	<div class="center">
+		<button type="submit" class="btn btn-primary justify-content-right">
+			Create
+		</button>
+	</div>
+
+
+</form>
