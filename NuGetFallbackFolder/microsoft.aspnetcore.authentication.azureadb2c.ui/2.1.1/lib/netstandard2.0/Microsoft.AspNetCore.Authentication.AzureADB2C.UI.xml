@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AspNetCore.Authentication.AzureADB2C.UI</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Internal.AccessDeniedModel">
+            <summary>
+            This API supports infrastructure and is not intended to be used
+            directly from your code.This API may change or be removed in future releases
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Internal.AccessDeniedModel.OnGet">
+            <summary>
+            This API supports infrastructure and is not intended to be used
+            directly from your code.This API may change or be removed in future releases
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Internal.ErrorModel">
+            <summary>
+            This API supports infrastructure and is not intended to be used
+            directly from your code.This API may change or be removed in future releases
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Internal.ErrorModel.RequestId">
+            <summary>
+            This API supports infrastructure and is not intended to be used
+            directly from your code.This API may change or be removed in future releases
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Internal.ErrorModel.ShowRequestId">
+            <summary>
+            This API supports infrastructure and is not intended to be used
+            directly from your code.This API may change or be removed in future releases
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Internal.ErrorModel.OnGet">
+            <summary>
+            This API supports infrastructure and is not intended to be used
+            directly from your code.This API may change or be removed in future releases
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Internal.SignedOutModel">
+            <summary>
+            This API supports infrastructure and is not intended to be used
+            directly from your code.This API may change or be removed in future releases
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.Internal.SignedOutModel.OnGet">
+            <summary>
+            This API supports infrastructure and is not intended to be used
+            directly from your code.This API may change or be removed in future releases
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2CDefaults">
+            <summary>
+            Constants for different Azure Active Directory B2C authentication components.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2CDefaults.PolicyKey">
+            <summary>
+            The key for the policy used in <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationProperties"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2CDefaults.OpenIdScheme">
+            <summary>
+            The scheme name for Open ID Connect when using
+            <see cref="M:Microsoft.AspNetCore.Authentication.AzureADB2CAuthenticationBuilderExtensions.AddAzureADB2C(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Action{Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions})"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2CDefaults.CookieScheme">
+            <summary>
+            The scheme name for cookies when using
+            <see cref="M:Microsoft.AspNetCore.Authentication.AzureADB2CAuthenticationBuilderExtensions.AddAzureADB2C(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Action{Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions})"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2CDefaults.BearerAuthenticationScheme">
+            <summary>
+            The default scheme for Azure Active Directory B2C Bearer.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2CDefaults.JwtBearerAuthenticationScheme">
+            <summary>
+            The scheme name for JWT Bearer when using
+            <see cref="M:Microsoft.AspNetCore.Authentication.AzureADB2CAuthenticationBuilderExtensions.AddAzureADB2CBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Action{Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions})"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2CDefaults.AuthenticationScheme">
+            <summary>
+            The default scheme for Azure Active Directory B2C.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2CDefaults.DisplayName">
+            <summary>
+            The display name for Azure Active Directory B2C.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions">
+            <summary>
+            Options for configuring authentication using Azure Active Directory B2C.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.OpenIdConnectSchemeName">
+            <summary>
+            Gets or sets the OpenID Connect authentication scheme to use for authentication with this instance
+            of Azure Active Directory B2C authentication.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.CookieSchemeName">
+            <summary>
+            Gets or sets the Cookie authentication scheme to use for sign in with this instance of
+            Azure Active Directory B2C authentication.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.JwtBearerSchemeName">
+            <summary>
+            Gets or sets the Jwt bearer authentication scheme to use for validating access tokens for this
+            instance of Azure Active Directory B2C Bearer authentication.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.ClientId">
+            <summary>
+            Gets or sets the client Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.ClientSecret">
+            <summary>
+            Gets or sets the client secret.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.Instance">
+            <summary>
+            Gets or sets the Azure Active Directory B2C instance.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.Domain">
+            <summary>
+            Gets or sets the domain of the Azure Active Directory B2C tennant.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.EditProfilePolicyId">
+            <summary>
+            Gets or sets the edit profile policy name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.SignUpSignInPolicyId">
+            <summary>
+            Gets or sets the sign up or sign in policy name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.ResetPasswordPolicyId">
+            <summary>
+            Gets or sets the reset password policy id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.CallbackPath">
+            <summary>
+            Gets or sets the sign in callback path.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.SignedOutCallbackPath">
+            <summary>
+            Gets or sets the sign out callback path.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.DefaultPolicy">
+            <summary>
+            Gets or sets the default policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions.AllSchemes">
+            <summary>
+            Gets all the underlying authentication schemes.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Authentication.AzureADB2CAuthenticationBuilderExtensions">
+            <summary>
+            Extension methods to add Azure Active Directory B2C Authentication to your application.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Authentication.AzureADB2CAuthenticationBuilderExtensions.AddAzureADB2CBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Action{Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions})">
+            <summary>
+            Adds JWT Bearer authentication to your app for Azure AD B2C Applications.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder"/>.</param>
+            <param name="configureOptions">The <see cref="T:System.Action`1"/> to configure the
+            <see cref="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions"/>.
+            </param>
+            <returns>The <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Authentication.AzureADB2CAuthenticationBuilderExtensions.AddAzureADB2CBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String,System.Action{Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions})">
+            <summary>
+            Adds JWT Bearer authentication to your app for Azure AD B2C Applications.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder"/>.</param>
+            <param name="scheme">The identifier for the virtual scheme.</param>
+            <param name="jwtBearerScheme">The identifier for the underlying JWT Bearer scheme.</param>
+            <param name="configureOptions">The <see cref="T:System.Action`1"/> to configure the
+            <see cref="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions"/>.
+            </param>
+            <returns>The <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Authentication.AzureADB2CAuthenticationBuilderExtensions.AddAzureADB2C(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Action{Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions})">
+            <summary>
+            Adds Azure Active Directory B2C Authentication to your application.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder"/>.</param>
+            <param name="configureOptions">The <see cref="T:System.Action`1"/> to configure the
+            <see cref="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions"/>
+            </param>
+            <returns>The <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Authentication.AzureADB2CAuthenticationBuilderExtensions.AddAzureADB2C(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.String,System.String,System.String,System.String,System.Action{Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions})">
+            <summary>
+            Adds Azure Active Directory B2C Authentication to your application.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder"/>.</param>
+            <param name="scheme">The identifier for the virtual scheme.</param>
+            <param name="openIdConnectScheme">The identifier for the underlying Open ID Connect scheme.</param>
+            <param name="cookieScheme">The identifier for the underlying cookie scheme.</param>
+            <param name="displayName">The display name for the scheme.</param>
+            <param name="configureOptions">The <see cref="T:System.Action`1"/> to configure the
+            <see cref="T:Microsoft.AspNetCore.Authentication.AzureADB2C.UI.AzureADB2COptions"/>
+            </param>
+            <returns>The <see cref="T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder"/>.</returns>
+        </member>
+    </members>
+</doc>

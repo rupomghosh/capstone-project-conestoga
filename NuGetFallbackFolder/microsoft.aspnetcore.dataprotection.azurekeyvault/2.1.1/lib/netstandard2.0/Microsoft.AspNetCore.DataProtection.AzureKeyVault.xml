@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AspNetCore.DataProtection.AzureKeyVault</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AspNetCore.DataProtection.AzureDataProtectionBuilderExtensions">
+            <summary>
+            Contains Azure KeyVault-specific extension methods for modifying a <see cref="T:Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.DataProtection.AzureDataProtectionBuilderExtensions.ProtectKeysWithAzureKeyVault(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Configures the data protection system to protect keys with specified key in Azure KeyVault.
+            </summary>
+            <param name="builder">The builder instance to modify.</param>
+            <param name="keyIdentifier">The Azure KeyVault key identifier used for key encryption.</param>
+            <param name="clientId">The application client id.</param>
+            <param name="certificate"></param>
+            <returns>The value <paramref name="builder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.DataProtection.AzureDataProtectionBuilderExtensions.ProtectKeysWithAzureKeyVault(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,System.String,System.String,System.String)">
+            <summary>
+            Configures the data protection system to protect keys with specified key in Azure KeyVault.
+            </summary>
+            <param name="builder">The builder instance to modify.</param>
+            <param name="keyIdentifier">The Azure KeyVault key identifier used for key encryption.</param>
+            <param name="clientId">The application client id.</param>
+            <param name="clientSecret">The client secret to use for authentication.</param>
+            <returns>The value <paramref name="builder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.DataProtection.AzureDataProtectionBuilderExtensions.ProtectKeysWithAzureKeyVault(Microsoft.AspNetCore.DataProtection.IDataProtectionBuilder,Microsoft.Azure.KeyVault.KeyVaultClient,System.String)">
+            <summary>
+            Configures the data protection system to protect keys with specified key in Azure KeyVault.
+            </summary>
+            <param name="builder">The builder instance to modify.</param>
+            <param name="client">The <see cref="T:Microsoft.Azure.KeyVault.KeyVaultClient"/> to use for KeyVault access.</param>
+            <param name="keyIdentifier">The Azure KeyVault key identifier used for key encryption.</param>
+            <returns>The value <paramref name="builder"/>.</returns>
+        </member>
+    </members>
+</doc>
